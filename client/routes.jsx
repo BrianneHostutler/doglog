@@ -6,7 +6,14 @@ import {MainLayout} from './layouts/MainLayout.jsx';
 import MessagesWrapper from './messages/MessagesWrapper.jsx';
 import About from './About.jsx';
 import MessageDetail from './messages/MessageDetail.jsx';
-import Frankie from './Frankie.jsx'
+
+FlowRouter.route('/', {
+  action() {
+    mount(MainLayout, {
+      content : (<MessagesWrapper />)
+    })
+  }
+});
 
 
 FlowRouter.route('/log', {
@@ -17,21 +24,8 @@ FlowRouter.route('/log', {
   }
 });
 
-FlowRouter.route('/frankie', {
-  action() {
-    mount(MainLayout, {
-      content : (<Frankie />)
-    })
-  }
-});
 
-FlowRouter.route('/', {
-  action() {
-    mount(MainLayout, {
-      content : (<MessagesWrapper />)
-    })
-  }
-});
+
 
 FlowRouter.route('/about', {
   action() {
