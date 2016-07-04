@@ -8,7 +8,6 @@ export default class MessageDetail extends TrackerReact(Component) {
       //without TrackerReact, you can't do the following:
       //if we change what gets published in publish.js then what's available in the front end (see with ctrl + m) is limited to just that.
       subscription: {
-        //messages : Meteor.subscribe('allMessages')
         messages : Meteor.subscribe('userMessages')
 
       }

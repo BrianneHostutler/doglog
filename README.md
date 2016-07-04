@@ -1,3 +1,12 @@
+create accoutn first
+
+then have page that says "add a pet" or "join an existing pet group by entering their unique id below"
+
+
+
+
+
+
 with meteor 1.3 - we can use npm packages
 
 npm init

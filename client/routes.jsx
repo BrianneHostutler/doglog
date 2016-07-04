@@ -6,7 +6,7 @@ import {MainLayout} from './layouts/MainLayout.jsx';
 import MessagesWrapper from './messages/MessagesWrapper.jsx';
 import About from './About.jsx';
 import MessageDetail from './messages/MessageDetail.jsx';
-import Account from './myAccount.jsx';
+import Account from './accounts/myAccount.jsx';
 
 FlowRouter.route('/', {
   action() {

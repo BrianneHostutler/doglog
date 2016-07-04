@@ -8,7 +8,7 @@ export default class MessagesForm extends Component {
 
     var text = this.refs.message.value.trim();
     console.log(text);
-    console.log(createdAt);
+    
     //by taking out insecure, you can't do this anymore
     // Messages.insert({
     //   text: text,
