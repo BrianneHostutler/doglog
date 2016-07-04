@@ -10,6 +10,7 @@ export default class MessageDetail extends TrackerReact(Component) {
       subscription: {
         //messages : Meteor.subscribe('allMessages')
         messages : Meteor.subscribe('userMessages')
+
       }
     }
   }
@@ -20,7 +21,8 @@ export default class MessageDetail extends TrackerReact(Component) {
   }
 
   message() {
-    console.log(this.props.id)
+    console.log(this.props.id);
+
     return Messages.findOne(this.props.id); //findOne doesn't return cursor - it returns an object
     //alternative:
     //return Messages.find({_id : this.props.id}).fetch(); //only .find() returns a cursor (meteor), .fetch returns us the object
@@ -39,6 +41,7 @@ export default class MessageDetail extends TrackerReact(Component) {
     return (
       <div>
         <h1>{res.text}</h1>
+        
       </div>
     )
   }

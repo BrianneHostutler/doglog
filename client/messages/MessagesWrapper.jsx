@@ -49,7 +49,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
 
     return (
       <div>
-          <h1>Daily Log {Session.get('david')}</h1>
+          <h1>Daily Log</h1>
 
           <MessagesForm /> {/* we can copy and paste this more times throughout our app and it will work the same :) - that's the power of react components */}
 

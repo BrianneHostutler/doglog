@@ -6,6 +6,7 @@ import {MainLayout} from './layouts/MainLayout.jsx';
 import MessagesWrapper from './messages/MessagesWrapper.jsx';
 import About from './About.jsx';
 import MessageDetail from './messages/MessageDetail.jsx';
+import Account from './myAccount.jsx';
 
 FlowRouter.route('/', {
   action() {
@@ -15,17 +16,21 @@ FlowRouter.route('/', {
   }
 });
 
-
 FlowRouter.route('/log', {
   action() {
     mount(MainLayout, {
-      content : (<MessageList />)
+      content : (<MessagesWrapper />)
     })
   }
 });
 
-
-
+FlowRouter.route('/account', {
+  action() {
+    mount(MainLayout, {
+      content : (<Account />)
+    })
+  }
+});
 
 FlowRouter.route('/about', {
   action() {

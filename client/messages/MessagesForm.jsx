@@ -7,8 +7,8 @@ export default class MessagesForm extends Component {
     //console.log(this); //this would console.log the entire component, you can see value which would be the value of the input
 
     var text = this.refs.message.value.trim();
-    console.log(text)
-
+    console.log(text);
+    console.log(createdAt);
     //by taking out insecure, you can't do this anymore
     // Messages.insert({
     //   text: text,
