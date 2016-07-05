@@ -10,8 +10,6 @@ export default class Home extends Component {
 		        <p></p>
 
 
-		        <button onClick={this.triggerLogin}>Want to login?</button>
-
 		      
 	      	</div>
 	    )
