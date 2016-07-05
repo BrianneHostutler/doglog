@@ -16,7 +16,7 @@ export default class About extends Component {
       <div>
         <h1>About Us</h1>
 
-        <p>Build good habits. Organize your life. Productive has all the tools you need to build a routine of positive, life changing habits. Productive gives you:</p>
+        <p></p>
 
 
         <button onClick={this.triggerLogin}>Want to login?</button>

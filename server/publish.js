@@ -14,3 +14,10 @@ Meteor.publish("allMessages", function(){
 Meteor.publish("userMessages", function(){
   return Messages.find({user: this.userId});
 });
+
+
+
+
+
+
+

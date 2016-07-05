@@ -27,4 +27,6 @@ Meteor.methods({
     }
     Messages.remove(message._id)
   }
+
+
 })

@@ -1,15 +1,14 @@
 import React from 'react';
-import AccountsUI from '../AccountsUI.jsx';
+import AccountsUI from '../accounts/AccountsUI.jsx';
 
 export const MainLayout = ({content}) => (
   <div className="main-layout">
     <header>
-      <h2>Dog Log</h2>
+      <img src="/images/bone.png"/>
 
       <nav>
         <a href="/">Home</a>
         <a href="/log">Log</a>
-        <a href="/about">About</a>
         <a href="/account">My Account</a>
         <AccountsUI />
       </nav>
