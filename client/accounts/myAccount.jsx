@@ -6,7 +6,7 @@ export default class Account extends Component{
 	render(){
 
 	    return (
-	      <div>
+	      <div className= "container">
 	        <h1>My Account</h1>
 
 	        <h2>Hi! Welcome to your account page!</h2>

@@ -23,13 +23,16 @@ export default class MessageSingle extends Component {
     return (
       <li className={messageClass} id={this.props.message._id}>
 
-        <button className="btn-cancel" onClick={this.deleteMessage.bind(this)}>
-        x
-        </button>
+
 
        {/* makes sure we're utilizing the correct this */}
         {/* ${this.props.message._id} is string interpolation*/}
-        <a href={`/messages/${this.props.message._id}`}>{this.props.message.text}</a>
+       <span className="username">{this.props.message.username}:</span>
+        <a href={`/messages/${this.props.message._id}`}> {this.props.message.text}</a>
+
+        <button className="btn-cancel" onClick={this.deleteMessage.bind(this)}>
+        x
+        </button>
         <br /> {/* need the trailing / to make this work */}
         {/* uncomment this to see the status this.props.message.complete.toString() */}
         {status}

@@ -16,8 +16,15 @@ Meteor.publish("userMessages", function(){
 });
 
 
+Pets = new Mongo.Collection("pets");
 
+Meteor.publish("allPets", function(){
+  return Pets.find();
+});
 
+Meteor.publish("userPets", function(){
+  return Pets.find({user: this.userId});
+});
 
 
 

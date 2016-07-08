@@ -4,13 +4,13 @@ import AccountsUI from '../accounts/AccountsUI.jsx';
 export const MainLayout = ({content}) => (
   <div className="main-layout">
     <header>
-      <img src="https://bytebucket.org/briannehostutler/final-project/raw/ea902539ac9bccd941e001ef9885f01afa6167d5/public/images/bone.png?token=725b526e2d6925964ad4a773e611e81d44cb230b" width="250" height="100"/>
+      <img src="https://bytebucket.org/briannehostutler/final-project/raw/629b83ace76553b19070fbb130e20a035f1e28a2/public/images/bone.png?token=6fae244eabb58809aaf4f8a4e51b2900bc351f41" width="250" height="100"/>
 
       <nav>
+        <AccountsUI />
         <a href="/">Home</a>
         <a href="/log">Log</a>
         <a href="/account">My Account</a>
-        <AccountsUI />
       </nav>
     </header>
     {content}

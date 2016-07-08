@@ -13,6 +13,7 @@ Meteor.methods({
       text: message,
       complete: false,
       createdAt: new Date(),
+      username: Meteor.user().username,
       user: Meteor.userId()
     })
   },
@@ -26,7 +27,20 @@ Meteor.methods({
       throw new Meteor.Error('not-authorized')
     }
     Messages.remove(message._id)
-  }
+  },
 
+  addPet(pet){
 
-})
+  check(pet, String)
+
+    Pets.insert({
+      text:pet,
+      createdAt: new Date(),
+      username: Meteor.user().username,
+      user: Meteor.userId()
+    })
+
+    
+  },
+
+});

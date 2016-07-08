@@ -7,7 +7,9 @@ import MessagesWrapper from './messages/MessagesWrapper.jsx';
 import About from './About.jsx';
 import MessageDetail from './messages/MessageDetail.jsx';
 import Account from './accounts/myAccount.jsx';
-import AddPet from './addpet.jsx';
+import PetsForm from './pets/PetsForm.jsx';
+import PetsWrapper from './pets/PetsWrapper.jsx';
+import PetDetail from './pets/PetDetail.jsx';
 import Home from './home.jsx';
 
 FlowRouter.route('/', {
@@ -37,7 +39,7 @@ FlowRouter.route('/account', {
 FlowRouter.route('/addpet', {
   action() {
     mount(MainLayout, {
-      content : (<AddPet />)
+      content : (<PetsForm />)
     })
   }
 });
