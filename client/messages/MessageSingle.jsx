@@ -28,7 +28,7 @@ export default class MessageSingle extends Component {
        {/* makes sure we're utilizing the correct this */}
         {/* ${this.props.message._id} is string interpolation*/}
        <span className="username">{this.props.message.username}:</span>
-        <a href={`/messages/${this.props.message._id}`}> {this.props.message.text}</a>
+        <span id="message">{this.props.message.text}</span>
 
         <button className="btn-cancel" onClick={this.deleteMessage.bind(this)}>
         x

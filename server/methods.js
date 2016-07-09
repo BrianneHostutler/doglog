@@ -34,13 +34,19 @@ Meteor.methods({
   check(pet, String)
 
     Pets.insert({
-      text:pet,
+      name: pet,
       createdAt: new Date(),
       username: Meteor.user().username,
       user: Meteor.userId()
-    })
+    });
 
-    
-  },
+    // Meteor.users.update(_id, {
+    //   $set: {
+    //     text:pet
+    //   }
+    // });
+
+  }  
+
 
 });

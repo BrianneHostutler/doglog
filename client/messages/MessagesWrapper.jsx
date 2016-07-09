@@ -21,7 +21,8 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
       //if we change what gets published in publish.js then what's available in the front end (see with ctrl + m) is limited to just that.
       subscription: {
         //messages : Meteor.subscribe('allMessages')
-        messages : Meteor.subscribe('userMessages')
+        messages : Meteor.subscribe('userMessages'),
+        othermessages : Meteor.subscribe('otherUserMessages')
       }
     }
   }

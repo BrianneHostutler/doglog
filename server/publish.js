@@ -9,12 +9,19 @@ Meteor.publish("allMessages", function(){
   return Messages.find();
 });
 
+// Meteor.publish("groupMessages", function(){
+//   return Messages.find({user: this.userId});
+// });
+
 //everywhere but inside a publish function we can use Meteor.userId(), that's why we're doing this.userId
 //returns Messages only for the current loggedin user
 Meteor.publish("userMessages", function(){
   return Messages.find({user: this.userId});
 });
-
+  
+Meteor.publish("otherUserMessages", function(){
+  return Messages.find({username: "Brianne"});
+});
 
 Pets = new Mongo.Collection("pets");
 

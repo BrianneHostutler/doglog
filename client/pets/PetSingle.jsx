@@ -25,6 +25,7 @@ export default class PetSingle extends Component {
 
 
 
+
        {/* makes sure we're utilizing the correct this */}
         {/* ${this.props.pet._id} is string interpolation*/}
        <span className="username">{this.props.pet.username}:</span>
@@ -34,7 +35,7 @@ export default class PetSingle extends Component {
         x
         </button>
         <br /> {/* need the trailing / to make this work */}
-        {/* uncomment this to see the status this.props.message.complete.toString() */}
+        {/* uncomment this to see the status this.props.pet.complete.toString() */}
         {status}
 
       </li>
