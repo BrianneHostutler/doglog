@@ -2,7 +2,7 @@ import React from 'react';
 import {mount} from 'react-mounter'
 import {MainLayout} from './layouts/MainLayout.jsx';
 import {HomeLayout} from './layouts/HomeLayout.jsx';
-import {HomeHeader} from './layouts/HomeHeader.jsx';
+
 import MessagesWrapper from './messages/MessagesWrapper.jsx';
 import About from './About.jsx';
 import MessageDetail from './messages/MessageDetail.jsx';
@@ -14,7 +14,7 @@ import Home from './home.jsx';
 
 FlowRouter.route('/', {
   action() {
-    mount(MainLayout, {
+    mount(HomeLayout, {
       content : (<Home />)
     })
   }
