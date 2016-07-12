@@ -8,7 +8,7 @@ export default class PetsForm extends Component {
 
     var text = this.refs.petName.value.trim();
     console.log(text);
-    
+
     //by taking out insecure, you can't do this anymore
     // Messages.insert({
     //   text: text,
@@ -25,10 +25,10 @@ export default class PetsForm extends Component {
         if (error){
           Bert.alert( 'You must be logged in to add a pet', 'danger', 'fixed-top', 'fa-frown-o' );
         }else {
-          this.refs.petName.value = ""; 
+          this.refs.petName.value = "";
           //clear the input after we submit
           console.log("yay");
-          
+
         }
       })
     }else{
@@ -47,4 +47,3 @@ export default class PetsForm extends Component {
     )
   }
 }
-

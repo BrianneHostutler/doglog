@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import AccountsUI from './accounts/AccountsUI.jsx';
 
 export default class Home extends Component {
+
 	render(){
-
-
 
 	    return (
 
@@ -23,7 +22,7 @@ export default class Home extends Component {
 							<br /><br />
 							Already a member? Click sign in below! Want to sign up? Click sign in below, then create an account in the bottom right corner!
 							</p>
-							<span id="login"><AccountsUI /></span>
+
 							<div className="homeImagesDiv">
 									<img className="homeImage" id="homePic1" src="https://bytebucket.org/briannehostutler/final-project/raw/3746e26ea84391e4f139b3c35ccb8e7e793b08e9/public/images/dogWithHose.jpg?token=bd54285bf4890d7b6688d8ef29c0e9b6eb1c6fea"/>
 									<img className="homeImage" id="homePic2" src="https://bytebucket.org/briannehostutler/final-project/raw/f48cd82e0e34aa344085931ab1e1dc14e028e441/public/images/dogFace.jpg?token=1b0f7420597c78814ccaf84b29474ccc662e664d"/>

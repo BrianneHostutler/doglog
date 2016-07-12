@@ -13,11 +13,19 @@ import PetDetail from './pets/PetDetail.jsx';
 import Home from './home.jsx';
 
 FlowRouter.route('/', {
-  action() {
-    mount(HomeLayout, {
-      content : (<Home />)
-    })
-  }
+    action: function(params) {
+        Tracker.autorun(function() {
+            if (!Meteor.userId()) {
+              mount(HomeLayout, {
+                content: (<Home />)
+              });
+            } else {
+              mount(MainLayout, {
+                content:  (<Account />)
+              });
+            }
+        });
+      }
 });
 
 FlowRouter.route('/log', {
@@ -28,13 +36,6 @@ FlowRouter.route('/log', {
   }
 });
 
-FlowRouter.route('/account', {
-  action() {
-    mount(MainLayout, {
-      content : (<Account />)
-    })
-  }
-});
 
 FlowRouter.route('/addpet', {
   action() {
