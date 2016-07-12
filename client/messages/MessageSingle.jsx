@@ -9,6 +9,7 @@ export default class MessageSingle extends Component {
 
   deleteMessage(){
     Meteor.call('deleteMessage', this.props.message);
+    console.log(this.props.message);
   }
 
 

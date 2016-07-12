@@ -40,13 +40,9 @@ Meteor.methods({
       user: Meteor.userId()
     });
 
-    // Meteor.users.update(_id, {
-    //   $set: {
-    //     text:pet
-    //   }
-    // });
 
-  }  
+
+  }
 
 
 });
