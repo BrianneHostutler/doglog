@@ -39,10 +39,19 @@ Meteor.methods({
       username: Meteor.user().username,
       user: Meteor.userId()
     });
+  },
 
+  addFriend(friend){
 
+  check(friend, String)
 
-  }
+    Friends.insert({
+      name: friend,
+      createdAt: new Date(),
+      username: Meteor.user().username,
+      user: Meteor.userId()
+    });
+  },
 
 
 });

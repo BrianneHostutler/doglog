@@ -29,11 +29,19 @@ FlowRouter.route('/', {
 });
 
 FlowRouter.route('/log', {
-  action() {
-    mount(MainLayout, {
-      content : (<MessagesWrapper />)
-    })
-  }
+  action: function(params) {
+      Tracker.autorun(function() {
+          if (!Meteor.userId()) {
+            mount(HomeLayout, {
+              content: (<Home />)
+            });
+          } else {
+            mount(MainLayout, {
+              content:  (<MessagesWrapper />)
+            });
+          }
+      });
+    }
 });
 
 

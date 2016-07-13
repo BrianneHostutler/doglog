@@ -20,7 +20,7 @@ export default class Home extends Component {
 							Have other people who help raise and watch your pet? Dog Log keeps all the information
 							about your pet in one convenient place to make sure you are always up to date on what's happening with your pet.
 							<br /><br />
-							Already a member? Click sign in below! Want to sign up? Click sign in below, then create an account in the bottom right corner!
+							Already a member? Click "Sign in" in the upper right corner! Want to sign up? Click "Sign in", then "Create an Account" in the bottom right corner!
 							</p>
 
 							<div className="homeImagesDiv">

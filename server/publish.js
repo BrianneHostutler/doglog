@@ -18,7 +18,7 @@ Meteor.publish("allMessages", function(){
 Meteor.publish("userMessages", function(){
   return Messages.find({user: this.userId});
 });
-  
+
 Meteor.publish("otherUserMessages", function(){
   return Messages.find({username: "Brianne"});
 });
@@ -34,4 +34,7 @@ Meteor.publish("userPets", function(){
 });
 
 
-
+//add field to users collection "friends",
+//take input from user & check that it is a valid username
+// if valid, insert that username into my friends list
+// & add my username into their friends list
