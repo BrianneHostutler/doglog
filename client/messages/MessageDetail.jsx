@@ -40,7 +40,7 @@ export default class MessageDetail extends TrackerReact(Component) {
     return (
       <div>
         <h1>{res.text}</h1>
-        
+
       </div>
     )
   }
