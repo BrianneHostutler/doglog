@@ -35,13 +35,15 @@ nav a{
 	padding-right: 15px;
 	color: white;
 }
-#homepage{
-	text-align: center;
-}
 #home{
-	
-
+	text-align: center;
+ 	background: url("https://bytebucket.org/briannehostutler/final-project/raw/1a380f96377784423a599041b5ea33f8cd7f5a46/public/images/doggies.png?token=d9ddba3c72c4820fec4c2b3ab9dc740239a9d216") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
 }
+
 .container{
 	width:80%;
 	margin:0 auto;
@@ -49,7 +51,6 @@ nav a{
 }
 h1{
 	font-size: 3em;
-	margin-top: 20px;
 	padding-top:20px;
 	padding-bottom: 20px;
 
@@ -95,7 +96,7 @@ input{
 	filter: alpha(opacity=50);
 	width:100%;
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-		filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 #homeImage1{
 	margin-bottom: -4px;
