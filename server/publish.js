@@ -19,9 +19,12 @@ Meteor.publish("userMessages", function(){
   return Messages.find({user: this.userId});
 });
 
-Meteor.publish("otherUserMessages", function(){
-  return Messages.find({username: "Brianne"});
+Meteor.publish("friendsMessages", function(){
+  return Messages.find({friend: friend});
 });
+
+
+
 
 Pets = new Mongo.Collection("pets");
 
@@ -34,7 +37,12 @@ Meteor.publish("userPets", function(){
 });
 
 
+
+
 //add field to users collection "friends",
 //take input from user & check that it is a valid username
 // if valid, insert that username into my friends list
 // & add my username into their friends list
+
+//friends collection- would list each group as a document
+//with group name then members

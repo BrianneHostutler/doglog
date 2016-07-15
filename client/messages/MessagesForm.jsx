@@ -8,7 +8,7 @@ export default class MessagesForm extends Component {
 
     var text = this.refs.message.value.trim();
     console.log(text);
-    
+
     //by taking out insecure, you can't do this anymore
     // Messages.insert({
     //   text: text,
@@ -39,7 +39,6 @@ export default class MessagesForm extends Component {
     return (
       <form className="new-message" onSubmit={this.addMessage.bind(this)}>
         <input type="text" ref="message" placeholder="Enter your message" />  {/* this is a comment! ref is how we can refer to this input later */}
-
       </form>
     )
   }
