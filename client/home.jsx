@@ -10,8 +10,10 @@ export default class Home extends Component {
 
 					<div id="homepage">
 					<div className="homeImagesDiv">
-						<img className="homeImage"src="https://bytebucket.org/briannehostutler/final-project/raw/fd93fdaa29fb3fd72cbc3a0ef9fa3cfc7696ed5a/public/images/dogs.jpg?token=5897cb7d75e2cebec2c54c865e98a91ed715b5e2" />
-							</div>
+						<img className="homeImage" id="homeImage1" src="https://bytebucket.org/briannehostutler/final-project/raw/79bc3f5d09de723885dc3731c595474b71687d7e/public/images/smalldogs.jpg?token=b517e4f69d43f5bd64fe0804b1a80846e20be7c1" />
+						<br/><img className="homeImage" id="homeImage2" src="https://bytebucket.org/briannehostutler/final-project/raw/fd93fdaa29fb3fd72cbc3a0ef9fa3cfc7696ed5a/public/images/dogs.jpg?token=5897cb7d75e2cebec2c54c865e98a91ed715b5e2" />
+
+						</div>
 					<h1 id="home">Welcome to Dog Log</h1>
 					<h3>The handy app for pet owners!</h3>
 

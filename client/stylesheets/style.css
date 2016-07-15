@@ -37,8 +37,10 @@ nav a{
 }
 #homepage{
 	text-align: center;
-	z-index: -1;
-	position: absolute;
+}
+#home{
+	
+
 }
 .container{
 	width:80%;
@@ -71,9 +73,6 @@ input{
 #homepage h1, h3, {
 	text-align: center;
 }
-#login-buttons{
-
-}
 #login a{
 	padding:7px;
 	margin-bottom: 5px;
@@ -92,23 +91,14 @@ input{
 	font-size: 15pt;
 }
 .homeImage{
-
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 	width:100%;
-	box-shadow: 10px 10px 5px black;
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 		filter: grayscale(100%);
 }
-
-#homePic1{
-	-ms-transform: rotate(-10deg); /* IE 9 */
-	-webkit-transform: rotate(-10deg);
-	transform: rotate(-10deg);
-}
-#homePic3{
-	-ms-transform: rotate(-10deg); /* IE 9 */
-	-webkit-transform: rotate(-10deg);
-	transform: rotate(-10deg);
-
+#homeImage1{
+	margin-bottom: -4px;
 }
 .username{
 	padding-left: 5px;
