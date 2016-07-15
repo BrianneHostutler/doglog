@@ -49,6 +49,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
     // }
 
     return (
+      <div className="container">
       <div id="messagesContainer">
           <h1>Daily Log</h1>
 
@@ -65,6 +66,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
               {/*<MessageSingle message={res[0]} />*/}
               {/* comment this out: {res[0].text} */}
           </ul>
+      </div>
       </div>
     )
   }

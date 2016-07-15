@@ -9,7 +9,7 @@ export default class Account extends Component{
 	render(){
 
 			return(
-						<div id="myaccountPage">
+						<div className="container">
 			        <h1>My Account</h1>
 
 							<AccountsForm />
