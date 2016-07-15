@@ -9,8 +9,7 @@ export default class Home extends Component {
 	    return (
 
 					<div id="homepage">
-
-						<h1 id="home">Welcome to Dog Log</h1>
+					<img className= "homeImage" src="https://bytebucket.org/briannehostutler/final-project/raw/eb113cf2164b1327b813c62e458608991e1eb718/public/images/font1.png?token=2764877d168acb31c93537eb87dd788a45928dc7" />
 
 							<p id="homepageText">
 							Dog Log helps to keep track of anything related to your beloved animal. From appointments, to medication, to feeding schedule,
