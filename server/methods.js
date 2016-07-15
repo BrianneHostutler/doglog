@@ -14,7 +14,8 @@ Meteor.methods({
       complete: false,
       createdAt: new Date(),
       username: Meteor.user().username,
-      user: Meteor.userId()
+      user: Meteor.userId(),
+      friend: Meteor.user().friend,
     })
   },
 

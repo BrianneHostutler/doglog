@@ -22,7 +22,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
       subscription: {
         //messages : Meteor.subscribe('allMessages')
         messages : Meteor.subscribe('userMessages'),
-        othermessages : Meteor.subscribe('otherUserMessages')
+        othermessages : Meteor.subscribe('friendsMessages')
       }
     }
   }

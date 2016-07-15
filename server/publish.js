@@ -9,9 +9,6 @@ Meteor.publish("allMessages", function(){
   return Messages.find();
 });
 
-// Meteor.publish("groupMessages", function(){
-//   return Messages.find({user: this.userId});
-// });
 
 //everywhere but inside a publish function we can use Meteor.userId(), that's why we're doing this.userId
 //returns Messages only for the current loggedin user
@@ -20,9 +17,8 @@ Meteor.publish("userMessages", function(){
 });
 
 Meteor.publish("friendsMessages", function(){
-  return Messages.find({friend: friend});
+  return Messages.find({friend: this.friend});
 });
-
 
 
 
@@ -37,12 +33,8 @@ Meteor.publish("userPets", function(){
 });
 
 
-
-
 //add field to users collection "friends",
-//take input from user & check that it is a valid username
-// if valid, insert that username into my friends list
-// & add my username into their friends list
+//take input from user &  insert that username into my friends list
+// & show their messages in addition to mine
 
-//friends collection- would list each group as a document
-//with group name then members
+//when message is posted, also add friend field attached to message
