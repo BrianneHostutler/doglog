@@ -6,7 +6,7 @@ export default class PetsForm extends Component {
     event.preventDefault();
     //console.log(this); //this would console.log the entire component, you can see value which would be the value of the input
 
-    var text = this.refs.petName.value.trim();
+    var text = this.refs.pet.value.trim();
     console.log(text);
 
     //by taking out insecure, you can't do this anymore
@@ -25,7 +25,7 @@ export default class PetsForm extends Component {
         if (error){
           Bert.alert( 'You must be logged in to add a pet', 'danger', 'fixed-top', 'fa-frown-o' );
         }else {
-          this.refs.petName.value = "";
+          this.refs.pet.value = "";
           //clear the input after we submit
           console.log("yay");
 
@@ -40,10 +40,13 @@ export default class PetsForm extends Component {
   render(){
 
     return (
+      <div>
+
       <form className="new-pet" onSubmit={this.addPet.bind(this)}>
-        <input type="text" ref="petName" placeholder="Enter your pet name" />  {/* this is a comment! ref is how we can refer to this input later */}
+        <input type="text" ref="pet" placeholder="Enter your pet name" />  {/* this is a comment! ref is how we can refer to this input later */}
 
       </form>
+      </div>
     )
   }
 }

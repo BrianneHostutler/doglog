@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import AccountsForm from './AccountsForm';
 import {render} from "react-dom";
+import PetsForm from './PetsForm';
 
 
 export default class Account extends Component{
@@ -15,9 +16,8 @@ export default class Account extends Component{
 							<AccountsForm />
 
 			        <h3> Add My Pet </h3>
-			        <p>To add your pet, click <a href='/addpet'>here!</a></p><br/>
-
-			        <h3>Existing Pet </h3>
+			        <p>Enter the name of your pet below!</p><br/>
+							<PetsForm />
 
 		      	</div>
 	    	)

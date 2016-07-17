@@ -34,6 +34,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
 
  messages() {
     return Messages.find({}, {sort: {createdAt: -1}}).fetch(); //only .find() returns a cursor (meteor), .fetch returns us the object
+
   }
 
 
@@ -54,8 +55,6 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
           <h1>Daily Log</h1>
 
           <MessagesForm /> {/* we can copy and paste this more times throughout our app and it will work the same :) - that's the power of react components */}
-
-
 
           <ul>
               {this.messages().map( (message) => {

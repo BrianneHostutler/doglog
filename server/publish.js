@@ -16,7 +16,6 @@ Meteor.publish("userMessages", function(){
   return Messages.find({user: this.userId});
 });
 
-
 Meteor.publish("friendsMessages", function(){
   return Messages.find({friend: this.friend});
 });
