@@ -14,7 +14,8 @@ Meteor.methods({
       complete: false,
       createdAt: new Date(),
       username: Meteor.user().username,
-      user: Meteor.userId()
+      user: Meteor.userId(),
+      pet: Meteor.user().pet,
     })
   },
 
@@ -39,6 +40,31 @@ Meteor.methods({
       username: Meteor.user().username,
       user: Meteor.userId()
     })
+
+    Meteor.users.update(
+      {_id: Meteor.userId()},
+        {$set :
+          {
+            "pet": pet
+          }
+        }
+    )
+
+  },
+
+
+  addFriend(friend) {
+
+      check(friend, String)
+
+      Meteor.users.update(
+        {_id: Meteor.userId()},
+          {$set :
+            {
+              "friend": friend
+            }
+          }
+      )
   },
 
 });
