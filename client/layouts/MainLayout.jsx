@@ -9,13 +9,14 @@ export const MainLayout = ({content}) => (
       <nav>
         <AccountsUI />
         <a href="/">Home</a>
+        <a href="/account">My Account</a>
         <a href="/log">Log</a>
-
+        {/*<a href="/calender">Calender</a>*/}
       </nav>
 
     </header>
       <div className= "container">
-    {content}
+          {content}
       </div>
   </div>
 )

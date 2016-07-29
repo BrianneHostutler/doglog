@@ -9,14 +9,16 @@ Meteor.publish("allMessages", function(){
   return Messages.find();
 });
 
+Meteor.publish("users", function(){
+ return Meteor.users.find({_id: this.userId})
+});
 
 //everywhere but inside a publish function we can use Meteor.userId(), that's why we're doing this.userId
 //returns Messages only for the current loggedin user
 Meteor.publish("userMessages", function(){
   let currentUser = Meteor.users.findOne(this.userId);
-  return Messages.find({_id: currentUser.pet});
+  return Messages.find({petID: currentUser.petID});
 });
-
 
 
 Pets = new Mongo.Collection("pets");
@@ -30,8 +32,5 @@ Meteor.publish("userPets", function(){
 });
 
 
-//add field to users collection "friends",
-//take input from user &  insert that username into my friends list
-// & show their messages in addition to mine
 
-//attach pet to each message, show the
+TasksCollection = new Mongo.Collection("tasks");

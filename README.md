@@ -1,3 +1,1 @@
 Dog Log
-# doglog
-# doglog

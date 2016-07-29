@@ -3,8 +3,8 @@ import AccountsUI from '../accounts/AccountsUI.jsx';
 
 export const HomeLayout = ({content}) => (
   <div id= "homeLayout">
-      <div >
-        <header>
+      <div>
+        <header id= "header">
 
           <nav>
             <span id="login"><AccountsUI /></span>

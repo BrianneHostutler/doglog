@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {render} from "react-dom";
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
@@ -22,7 +21,6 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
       subscription: {
         //messages : Meteor.subscribe('allMessages')
         messages : Meteor.subscribe('userMessages'),
-        
       }
     }
   }
@@ -34,9 +32,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
 
  messages() {
     return Messages.find({}, {sort: {createdAt: -1}}).fetch(); //only .find() returns a cursor (meteor), .fetch returns us the object
-
   }
-
 
   render(){
     //console.log(this.message()); //see this in the chrome console.
@@ -52,7 +48,7 @@ export default class MessagesWrapper extends TrackerReact(React.Component) {
     return (
       <div className="container">
       <div id="messagesContainer">
-          <h1>Daily Log</h1>
+          <h1>Daily Log:</h1>
 
           <MessagesForm /> {/* we can copy and paste this more times throughout our app and it will work the same :) - that's the power of react components */}
 
